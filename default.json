@@ -17,6 +17,10 @@
 		{
 			"groupName": "actions",
 			"matchDatasources": ["github-tags","github-releases"]
+		},
+		{
+			"groupName": "js",
+			"matchLanguages": ["javascript"]
 		}
 	]
 }
