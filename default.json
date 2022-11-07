@@ -207,16 +207,20 @@
 			"addLabels": ["optional"]
 		},
 		{
-			"groupName": "dotnet",
+			"groupName": "NuGet Packages",
 			"matchDatasources": ["nuget"]
 		},
 		{
-			"groupName": "actions",
+			"groupName": "GitHub Actions",
 			"matchDatasources": ["github-tags","github-releases"]
 		},
 		{
-			"groupName": "js",
+			"groupName": "JavaScript Updates",
 			"matchLanguages": ["javascript"]
+		},
+		{
+			"groupName": "DisCatSharp",
+			"matchPackagePatterns": [ "DisCatSharp", "discatsharp", "Discatsharp" ]
 		}
 	]
 }
