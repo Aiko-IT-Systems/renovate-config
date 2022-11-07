@@ -21,6 +21,16 @@
 		{
 			"groupName": "js",
 			"matchLanguages": ["javascript"]
+		},
+		{
+			"extends": "monorepo:dotnet",
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			],
+			"groupName": "dotnet monorepo"
 		}
 	]
 }
