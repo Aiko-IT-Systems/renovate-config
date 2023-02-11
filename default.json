@@ -211,16 +211,41 @@
 			"matchDatasources": ["nuget"]
 		},
 		{
-			"groupName": "GitHub Actions",
-			"matchDatasources": ["github-tags","github-releases"]
+			"groupName": "GitHub Packages",
+			"matchDatasources": ["github-tags","github-releases"],
+			"automerge": true
 		},
 		{
-			"groupName": "JavaScript Updates",
-			"matchLanguages": ["javascript"]
+			"groupName": "Npm Packages",
+			"matchDatasources": ["npm"]
 		},
 		{
-			"groupName": "DisCatSharp",
-			"matchPackagePatterns": [ "DisCatSharp", "discatsharp", "Discatsharp" ]
+			"groupName": "Docker Packages",
+			"matchDatasources": ["docker"]
+		},
+		{
+			"groupName": "Go Packages",
+			"matchDatasources": ["go"]
+		},
+		{
+			"groupName": "Hex Packages",
+			"matchDatasources": ["hex"]
+		},
+		{
+			"groupName": "Python Packages",
+			"matchDatasources": ["pypi"]
+		},
+		{
+			"groupName": "Helm Packages",
+			"matchDatasources": ["helm"]
+		},
+		{
+			"groupName": "Rust Packages",
+			"matchManagers": ["cargo"]
+		},
+		{
+			"groupName": "Elixir Packages",
+			"matchManagers": ["mix"]
 		}
 	]
 }
