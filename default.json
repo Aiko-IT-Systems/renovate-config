@@ -207,8 +207,15 @@
 			"addLabels": ["optional"]
 		},
 		{
+			"extends": "monorepo:dotnet",
 			"groupName": "NuGet Packages",
-			"matchDatasources": ["nuget"]
+			"matchDatasources": ["nuget"],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			]
 		},
 		{
 			"groupName": "GitHub Packages",
@@ -251,5 +258,21 @@
 			"groupName": "DisCatSharp",
 			"matchPackagePatterns": [ "DisCatSharp", "discatsharp", "Discatsharp" ]
 		}
-	]
+	],
+	"docker-compose": {
+		"major": {
+			"enabled": true
+		},
+		"minor": {
+			"enabled": true
+		}
+	},
+	"dockerfile": {
+		"major": {
+			"enabled": true
+		},
+		"minor": {
+			"enabled": true
+		}
+	}
 }
